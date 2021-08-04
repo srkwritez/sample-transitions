@@ -1,26 +1,40 @@
 $(document).ready(function () {
+    showFadeInOutMessage();
     showNextMessage();
     window.setInterval(function(){
-      showNextMessage();
+        showFadeInOutMessage();
+        },6000);
+    window.setInterval(function(){
+      showNextMessage();    
       }, 15000);
+ 
   });
 
+  let counter=2;
+  let fadeCounter=2
+  function showFadeInOutMessage(){
 
-function showNextMessage(){
-
-    let elem1 = $(".option1 li").eq(counter);
+    let elem1 = $(".option1 li").eq(fadeCounter);
     elem1.removeClass("hidden");  
-    $(".option1 li:not(:eq("+counter+"))").addClass("hidden");   
+    $(".option1 li:not(:eq("+fadeCounter+"))").addClass("hidden");   
 
-    let elem2 = $(".option2 li").eq(counter);
+    let elem2 = $(".option2 li").eq(fadeCounter);
     elem2.removeClass("hidden");
     elem2.addClass("fade-out")   
-    $(".option2 li:not(:eq("+counter+"))").addClass("hidden"); 
-
+    $(".option2 li:not(:eq("+fadeCounter+"))").addClass("hidden"); 
+    
     let elem3 = $(".option3 li").eq(counter);
     elem3.removeClass("hidden");
     elem3.addClass("fade-in")   
     $(".option3 li:not(:eq("+counter+"))").addClass("hidden"); 
+
+    fadeCounter = fadeCounter-1;
+    if(fadeCounter==-1){
+        fadeCounter =2;
+    }        
+}
+
+function showNextMessage(){
 
     let elem4 = $(".option4 li").eq(counter);
     elem4.removeClass("hidden");
@@ -35,7 +49,4 @@ function showNextMessage(){
         counter =2;
     }        
 }
-let counter=2;
-$(document).click(function (e) { 
-    
-});
+

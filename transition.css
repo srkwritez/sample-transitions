@@ -25,14 +25,14 @@
   .fade-out{
     opacity: 1;
     animation: flashout ;
-    animation-duration: 20s;
+    animation-duration: 6s;
   }
   .fade-in {
     opacity: 1;
     animation-name: flashin;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 20s;
+    animation-duration: 6s;
     
 }
 
