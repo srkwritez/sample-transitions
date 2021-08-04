@@ -1,0 +1,45 @@
+.hidden{
+    display: none;
+}
+
+.option1-container, .option2-container, .option3-container, .option4-container, .option5-container{
+    background-color: black;
+    height: 20px;
+}
+
+@keyframes flashout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+@keyframes flashin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  .fade-out{
+    opacity: 1;
+    animation: flashout ;
+    animation-duration: 20s;
+  }
+  .fade-in {
+    opacity: 1;
+    animation-name: flashin;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 20s;
+    
+}
+
+
+ul{
+  list-style-type: none;
+  
+  color: white;
+  
+}

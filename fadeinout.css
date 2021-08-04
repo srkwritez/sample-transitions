@@ -1,0 +1,110 @@
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.option4 li {
+    position: absolute;
+}
+
+.option4 li.hidden {
+    display: block;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    opacity: 0;
+    height: 0;
+}
+
+.option4 li:not(.hidden) {
+    display: block;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+    opacity: 1;
+}
+
+
+@-webkit-keyframes slideInLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 48px;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 48px;
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    from {
+        left: 48px;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        left: 48px;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+.option5 li {
+    position: absolute;
+}
+
+.option5 li.hidden {
+    display: block;
+    -webkit-animation: slideOutLeft 5s;
+    animation: slideOutLeft 5s;
+    left: -100%;
+    height: 0;
+}
+
+.option5 li:not(.hidden) {
+    display: block;
+    -webkit-animation: slideInLeft 5s;
+    animation: slideInLeft 5s;
+    left: 48px;
+}
