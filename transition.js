@@ -6,7 +6,7 @@ $(document).ready(function () {
         },5000);
     window.setInterval(function(){
       showNextMessage();    
-      }, 5000);
+      }, 6000);
  
   });
 
