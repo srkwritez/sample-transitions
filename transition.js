@@ -3,10 +3,10 @@ $(document).ready(function () {
     showNextMessage();
     window.setInterval(function(){
         showFadeInOutMessage();
-        },6000);
+        },5000);
     window.setInterval(function(){
       showNextMessage();    
-      }, 15000);
+      }, 5000);
  
   });
 
